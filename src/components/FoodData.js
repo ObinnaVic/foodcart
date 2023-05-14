@@ -9,19 +9,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683986779/whiteYam_zgisia.jpg",
         name: "White Yam and Egg",
         amount: 0,
-        id: 100,
+        id: 101,
         features: [
           {
             size: "Small",
             price: 150,
+            id: 1
           },
           {
             size: "Medium",
             price: 250,
+            id:2
           },
           {
             size: "Large",
             price: 400,
+            id:3
           },
         ],
       },
@@ -29,19 +32,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683986852/porridge_utgygn.jpg",
         name: "Porridge",
         amount: 0,
-        id: 200,
+        id: 102,
         features: [
           {
             size: "Small",
             price: 100,
+            id:4
           },
           {
             size: "Medium",
             price: 200,
+            id:5
           },
           {
             size: "Large",
             price: 300,
+            id:6
           },
         ],
       },
@@ -57,19 +63,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683985484/white_ipzzhf.jpg",
         name: "White Spag",
         amount: 0,
-        id: 400,
+        id: 103,
         features: [
           {
             size: "Small",
             price: 250,
+            id:7
           },
           {
             size: "Medium",
             price: 350,
+            id:8
           },
           {
             size: "Large",
             price: 400,
+            id:9
           },
         ],
       },
@@ -77,19 +86,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683985431/jollof_uf0way.jpg",
         name: "Jollof Spag",
         amount: 0,
-        id: 500,
+        id: 104,
         features: [
           {
             size: "Small",
             price: 200,
+            id:10
           },
           {
             size: "Medium",
             price: 300,
+            id:11
           },
           {
             size: "Large",
             price: 450,
+            id:12
           },
         ],
       },
@@ -105,19 +117,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683985699/fried_fe1q9t.jpg",
         name: "Fried Chicken",
         amount: 0,
-        id: 600,
+        id: 105,
         features: [
           {
             size: "Small",
             price: 200,
+            id:13
           },
           {
             size: "Medium",
             price: 450,
+            id:14
           },
           {
             size: "Large",
             price: 600,
+            id:15
           },
         ],
       },
@@ -133,19 +148,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683986066/egusi_dwgdbn.jpg",
         name: "Egusi",
         amount: 0,
-        id: 700,
+        id: 106,
         features: [
           {
             size: "Small",
             price: 150,
+            id:16
           },
           {
             size: "Medium",
             price: 250,
+            id:17
           },
           {
             size: "Large",
             price: 300,
+            id:18
           },
         ],
       },
@@ -153,19 +171,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683986120/okro_krtykk.jpg",
         name: "Okro",
         amount: 0,
-        id: 800,
+        id: 108,
         features: [
           {
             size: "Small",
             price: 150,
+            id:19
           },
           {
             size: "Medium",
             price: 200,
+            id:20
           },
           {
             size: "Large",
             price: 350,
+            id:21
           },
         ],
       },
@@ -173,19 +194,22 @@ export const data = [
         img: "https://res.cloudinary.com/dprw6oeba/image/upload/v1683986160/Ewedu_meujk1.jpg",
         name: "Ewedu",
         amount: 0,
-        id: 900,
+        id: 109,
         features: [
           {
             size: "Small",
             price: 200,
+            id:22
           },
           {
             size: "Medium",
             price: 270,
+            id:23
           },
           {
             size: "Large",
             price: 400,
+            id:24
           },
         ],
       },
@@ -207,14 +231,17 @@ export const data = [
           {
             size: "Small",
             price: 50,
+            id:25
           },
           {
             size: "Medium",
             price: 150,
+            id:26
           },
           {
             size: "Large",
             price: 200,
+            id:27
           },
         ],
       },
@@ -227,14 +254,17 @@ export const data = [
           {
             size: "Small",
             price: 70,
+            id:28
           },
           {
             size: "Medium",
             price: 100,
+            id:29
           },
           {
             size: "Large",
             price: 200,
+            id:30
           },
         ],
       },
@@ -257,14 +287,17 @@ export const data = [
           {
             size: "Small",
             price: 250,
+            id:31
           },
           {
             size: "Medium",
             price: 350,
+            id:32
           },
           {
             size: "Large",
             price: 400,
+            id:33
           },
         ],
       },
@@ -277,14 +310,17 @@ export const data = [
           {
             size: "Small",
             price: 200,
+            id:34
           },
           {
             size: "Medium",
             price: 300,
+            id:35
           },
           {
             size: "Large",
             price: 400,
+            id:36
           },
         ],
       },
@@ -297,14 +333,17 @@ export const data = [
           {
             size: "Small",
             price: 200,
+            id:37
           },
           {
             size: "Medium",
             price: 300,
+            id:38
           },
           {
             size: "Large",
             price: 450,
+            id:39
           },
         ],
       },
@@ -327,14 +366,17 @@ export const data = [
           {
             size: "Small",
             price: 350,
+            id:40
           },
           {
             size: "Medium",
             price: 650,
+            id:41
           },
           {
             size: "Large",
             price: 1000,
+            id:42
           },
         ],
       },
@@ -347,14 +389,17 @@ export const data = [
           {
             size: "Small",
             price: 300,
+            id:43
           },
           {
             size: "Medium",
             price: 600,
+            id:44
           },
           {
             size: "Large",
             price: 950,
+            id:45
           },
         ],
       },
@@ -377,14 +422,17 @@ export const data = [
           {
             size: "Small",
             price: 250,
+            id:46
           },
           {
             size: "Medium",
             price: 350,
+            id:47
           },
           {
             size: "Large",
             price: 400,
+            id:48
           },
         ],
       },
@@ -407,14 +455,17 @@ export const data = [
           {
             size: "Small",
             price: 50,
+            id:49
           },
           {
             size: "Medium",
             price: 150,
+            id:50
           },
           {
             size: "Large",
             price: 200,
+            id:51
           },
         ],
       },
@@ -427,14 +478,17 @@ export const data = [
           {
             size: "Small",
             price: 50,
+            id:52
           },
           {
             size: "Medium",
             price: 150,
+            id:53
           },
           {
             size: "Large",
             price: 200,
+            id:54
           },
         ],
       },

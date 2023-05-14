@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { AppContext } from './Store';
+import Cart from './Cart';
 
 function Categories() {
   const { state, dispatch } = useContext(AppContext);
@@ -37,7 +38,12 @@ function Categories() {
 
   //function to show madal of other food categories
   const showOtherCategories = () => {
-    dispatch({type: "SHOWOTHERCATEGORIES"})
+    dispatch({type: "SHOWOTHERCATEGORIES"});
+  }
+
+  //A function which adds items to the food cart.
+  const additem = (id) => {
+    dispatch({type: "ADDTOCART", payload:id});
   }
 
   return (
@@ -47,14 +53,14 @@ function Categories() {
           className="fixed top-0 left-0 bg-orange-600 rounded p-3"
           onClick={showOtherCategories}
         >
-          Hide Available Foods
+          Hide Others
         </button>
       ) : (
         <button
           className="fixed top-0 left-0 bg-orange-600 rounded p-3"
           onClick={showOtherCategories}
         >
-          Show Available Foods
+          Show Others
         </button>
       )}
       <header className="text-center">
@@ -102,14 +108,15 @@ function Categories() {
         {featuresArr.map((item) => {
           const { features, name } = item;
           return features.map((i) => {
-            const { size, price } = i;
+            const { size, price, id } = i;
             return (
-              <div>
+              <div key={id}>
                 <h2 className="text-color font-bold text-2xl underline">
                   {name}
                 </h2>
                 <h2 className="text-color font-bold text-xl">{size}</h2>
                 <h1 className="font-bold text-2xl">{price}</h1>
+                <button className='bg-orange-600 p-2' onClick={(e) => additem(id)}>Add to Cart</button>
               </div>
             );
           });
@@ -157,6 +164,7 @@ function Categories() {
       ) : (
         ""
       )}
+      <Cart/>
     </main>
   );
 }

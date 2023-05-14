@@ -9,7 +9,8 @@ const initialState = {
   data: data,
   foodCart: [],
   featuresArr: [],
-  showOthers: false
+  showOthers: false,
+  cart: []
 }
 
 //A function to initiate a change in the state of an element or elements
@@ -37,13 +38,22 @@ const reducer = (state, action) => {
     return {...state, featuresArr: availableFeature};
   }
 
-  if (action.type === "GETNEWCATEGORY") {
-    const filteredCategory = data.filter((item) => item.id === action.payload);
-    return { ...state, foodCart: filteredCategory };
-  }
-
+  //function that changes the showOthers from true to false and vise versa after the Show Others button is clicked. 
   if (action.type === "SHOWOTHERCATEGORIES") {
     return {...state, showOthers: !state.showOthers}
+  }
+
+  //functions which handles the adding of items to cart after the Add To Cart button is clicked.
+  if (action.type === "ADDTOCART") {
+    let item = [];
+    if (state.featuresArr) {
+      //iterates throught the featuresArray if the featuresArray actually exists
+      for (const i of state.featuresArr) {
+        //filters through the features of the featuresArray to match up the id that equals the id being passes in the action.payload
+        item = i.features.filter((item) => item.id === action.payload); 
+      }
+    }
+    return {...state, cart: item};
   }
 
 

@@ -31,20 +31,26 @@ main {
     color: #FF4D00 !important;
 }
 
-.food-images {
+.food-images  {
     border-radius: 20%;
     max-width: 30%;
 }
 
-.overlayFood-images {
+/* .overlayFood-images {
     border-radius: 20%;
-    max-width: 80%;
+    width: 30%;
+} */
+
+.cartImages {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 
-@media only screen and (max-width: 425px) {
+/* @media only screen and (max-width: 425px) {
     .overlayFood-images {
         max-width: 80%;
     }
-}
+} */
 

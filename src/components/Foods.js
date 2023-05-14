@@ -11,6 +11,7 @@ function Foods() {
   //a state to handle the rotating loader 
   const [loader, setLoader] = useState(true);
 
+  //function which runs to set the timer and duration of the loader.
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
