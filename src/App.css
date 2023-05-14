@@ -36,8 +36,15 @@ main {
     max-width: 30%;
 }
 
+.overlayFood-images {
+    border-radius: 20%;
+    max-width: 80%;
+}
+
 
 @media only screen and (max-width: 425px) {
-  
+    .overlayFood-images {
+        max-width: 80%;
+    }
 }
 

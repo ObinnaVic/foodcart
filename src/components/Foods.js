@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 function Foods() {
   const { state, dispatch } = useContext(AppContext);
   const { data } = state;
+
+  //a state to handle the rotating loader 
   const [loader, setLoader] = useState(true);
 
   useEffect(() => {

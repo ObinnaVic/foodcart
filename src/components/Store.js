@@ -8,7 +8,8 @@ export const AppContext = createContext();
 const initialState = {
   data: data,
   foodCart: [],
-  featuresArr: []
+  featuresArr: [],
+  showOthers: false
 }
 
 //A function to initiate a change in the state of an element or elements
@@ -22,16 +23,27 @@ const reducer = (state, action) => {
   }
 
   if (action.type === "GETCATEGORIES") {
+    //filter over the data to get the particular category belonging to a particular food
     const filteredCategory = data.filter((item) => item.id === action.payload);
     return {...state, foodCart: filteredCategory}
   }
 
   if (action.type === "SHOWFEATURES") {
     let availableFeature = []
+    //looping over the selected category to select the particular features to get the prices and sizes.
     for (const category of state.foodCart) {
       availableFeature = (category.categories.filter((i) => i.id === action.payload));
     }
     return {...state, featuresArr: availableFeature};
+  }
+
+  if (action.type === "GETNEWCATEGORY") {
+    const filteredCategory = data.filter((item) => item.id === action.payload);
+    return { ...state, foodCart: filteredCategory };
+  }
+
+  if (action.type === "SHOWOTHERCATEGORIES") {
+    return {...state, showOthers: !state.showOthers}
   }
 
 
