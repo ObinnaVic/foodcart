@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+main {
+    background-color: #e9e7e6;
+    max-width: 1440px;
+    padding: 50px 5px 50px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary-color {
+    background-color: #FF4D00 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.secondary-color {
+    background-color: #fcd4c5 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.text-color {
+    color: #FF4D00 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.food-images {
+    border-radius: 20%;
+    max-width: 30%;
 }
+
+
+@media only screen and (max-width: 425px) {
+  
+}
+
